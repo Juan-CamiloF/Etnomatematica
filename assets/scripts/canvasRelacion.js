@@ -135,4 +135,55 @@ window.onload = function () {
       ctx.stroke();
     }
   }
+  const canvas6 = document.getElementById("linea6");
+  if(canvas6 && canvas6.getContext){
+    let ctx = canvas6.getContext("2d");
+    if(ctx){
+      ctx.lineWidth = 2;
+      //Primera Linea 
+      ctx.strokeStyle = "rgb(0,0,255)";
+      ctx.beginPath();
+      ctx.moveTo(0,50);
+      ctx.lineTo(200,50);
+      //Flechas
+      ctx.moveTo(199,50);
+      ctx.lineTo(195,60);
+      ctx.moveTo(199,50);
+      ctx.lineTo(195,40);
+      //Segunda Linea
+      ctx.moveTo(0,150);
+      ctx.lineTo(200,150);
+      //Flechas
+      ctx.moveTo(199,150);
+      ctx.lineTo(195,160);
+      ctx.moveTo(199,150);
+      ctx.lineTo(195,140);
+      //Tercera Linea
+      ctx.moveTo(0,250);
+      ctx.lineTo(200,250);
+      //Flechas
+      ctx.moveTo(199,250);
+      ctx.lineTo(195,260);
+      ctx.moveTo(199,250);
+      ctx.lineTo(195,240);
+      //Cuarta Linea
+      ctx.moveTo(0,350);
+      ctx.lineTo(200,350);
+      //Flechas
+      ctx.moveTo(199,350);
+      ctx.lineTo(195,360);
+      ctx.moveTo(199,350);
+      ctx.lineTo(195,340);
+      //Quinta Linea
+      ctx.moveTo(0,450);
+      ctx.lineTo(200,450);
+      //Flechas
+      ctx.moveTo(199,450);
+      ctx.lineTo(195,460);
+      ctx.moveTo(199,450);
+      ctx.lineTo(195,440);  
+
+      ctx.stroke();
+    }
+  }
 };

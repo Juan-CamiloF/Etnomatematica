@@ -15,40 +15,106 @@
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/generales.css" />
     <link rel="stylesheet" href="../css/funcion.css " />
+    <link rel="stylesheet" href="../css/geogebra.css " />
 </head>
-<header class="header">
-    <nav class="nav">
-        <img src="../img/Konrad_Lorenz.png" alt="Konrad_Lorenz" />
-        <h3>Fundación Universitaria Konrad Lorenz</h3>
-    </nav>
-    <a href="../../index.html">
-        <div class="volver">
-            <i class="fas fa-undo-alt"></i>
-            <p>Volver</p>
-        </div>
-    </a>
-    <h1 class="titulo">Función Lineal</h1>
-    <div class="barra"></div>
-</header>
-<main class="main">
-    <section class="textos">
-        <h3 class="textos-titulo">Recuerda</h3>
-        <h3 class="centrarTexto formula">y=mx+b</h3>
-        <ul>
-            <li>m = pendiente</li>
-            <li>b = corte con el eje Y</li>
-            <li>x = variable independiente</li>
-            <li>y = variable dependiente</li>
-        </ul>
-    </section>
-    <section class="textos">
-        <div class="geogebra">
-            <div id="ggbApplet"></div>
-        </div>
-    </section>
-</main>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <img src="../img/Konrad_Lorenz.png" alt="Konrad_Lorenz" />
+            <h3>Fundación Universitaria Konrad Lorenz</h3>
+        </nav>
+        <a href="../../index.html">
+            <div class="volver">
+                <i class="fas fa-undo-alt"></i>
+                <p>Volver</p>
+            </div>
+        </a>
+        <h1 class="titulo">Función Lineal</h1>
+        <div class="barra"></div>
+    </header>
+    <main class="main">
+        <section class="textos">
+            <h3 class="textos-titulo">Recuerda</h3>
+            <h3 class="centrarTexto formula">y=mx+b</h3>
+            <ul>
+                <li>m = pendiente</li>
+                <li>b = corte con el eje Y</li>
+                <li>x = variable independiente</li>
+                <li>y = variable dependiente</li>
+            </ul>
+        </section>
+        <section class="textos">
+            <div class="geogebra">
+                <div id="ggbApplet"></div>
+            </div>
+        </section>
+        <section class="textos Actividad">
+            <h3 class="textos-titulo preguntas">Actividad</h3>
+            <p>1) Cuando m=3 ¿La pendiente es creciente o decreciente según el gráfico?</p>
+            <div class="conjunto">
+                <button id="pregunta1.1" class="btn">Creciente</button>
+                <button id="pregunta1.2" class="btn">Decreciente</button>
+            </div>
+            <p>2) Cuando m = 4 y b = 0, ¿Cuál es la gráfica?</p>
+            <div class="contenedorLineal">
+                <div>
+                    <button id="pregunta2.1" class="btn Lineal">A</button>
+                    <img class="plano" src="../img/geogebra/Imagen1.png" alt="grafica" />
+                </div>
+                <div>
+                    <button id="pregunta2.2" class="btn Lineal">B</button>
+                    <img class="plano" src="../img/geogebra/Imagen2.png" alt="grafica" />
+                </div>
+                <div>
+                    <button id="pregunta2.3" class="btn Lineal">C</button>
+                    <img class="plano" src="../img/geogebra/Imagen3.png" alt="grafica" />
+                </div>
+            </div>
+            <p>3) Cuando m = 4 y b = 0 la pendiente es decreciente.</p>
+            <div class="conjunto">
+                <button id="pregunta3.1" class="btn">Verdadero</button>
+                <button id="pregunta3.2" class="btn">Falso</button>
+            </div>
+            <p>4) Completa la tabla dada la ecuación.</p>
+            <div class="tabla">
+                <table>
+                    <tr>
+                        <th>Ecuación</th>
+                        <th>m</th>
+                        <th>b</th>
+                    </tr>
+                    <tr>
+                        <td>y = 20x + 1</td>
+                        <td><input type="number" id="pregunta4.1" class="btnTexto"></td>
+                        <td><input type="number" id="pregunta4.2" class="btnTexto"></td>
+                    </tr>
+                    <tr>
+                        <td>y = 6x - 17</td>
+                        <td><input type="number" id="pregunta4.3" class="btnTexto"></td>
+                        <td><input type="number" id="pregunta4.4" class="btnTexto"></td>
+                    </tr>
+                    <tr>
+                        <td>y = -3x + 7</td>
+                        <td><input type="number" id="pregunta4.5" class="btnTexto"></td>
+                        <td><input type="number" id="pregunta4.6" class="btnTexto"></td>
+                    </tr>
+                    <tr>
+                        <td>y = -4x - 4</td>
+                        <td><input type="number" id="pregunta4.7" class="btnTexto"></td>
+                        <td><input type="number" id="pregunta4.8" class="btnTexto"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="validar">
+                <button class="btnValidar" id="validar">Validar</button>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+    <script src="../scripts/geogebra.js"></script>
+    <script src="../scripts/preguntaGeogebra.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
 </html>
-
-
-<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
-<script src="../scripts/geogebra.js"></script>

@@ -4,7 +4,7 @@
     justify-content: center;
 }
 .img{
-    width: 250px;
+    width: 200px;
     margin: 15px;
     border-radius: 15px;
 }
@@ -21,8 +21,8 @@
     width: 100px;
     margin: 0 auto;
     border-radius: 5px;
+    background: rgba(70, 111, 245, 0.87);
 }
-
 .textos-parrafo{
     text-align: justify;
     padding-left: 15px;
@@ -31,9 +31,48 @@
 .contenedorImgs{
     display: flex;
     width: 50%; 
-    margin: 0 auto;
+    margin: 25px auto;
     justify-content: space-around;
     align-items: center;
+}
+.imgGato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedorCojunto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.btnTexto{
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 3px;
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+}
+.btnValidar{
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid rgba(66, 228, 60, 0.87);
+    background: none;
+    box-shadow: 3px 3px rgba(66, 228, 60, 0.87);
+    font-size: 18px;
+    cursor: pointer;
+    outline:none;
+}
+.btnValidar:hover{
+    background:rgba(70, 111, 245, 0.87) ;
+    border: 2px solid rgba(70, 111, 245, 0.87);
+    box-shadow: 3px 3px rgba(70, 111, 245, 0.87);
+}
+.validar{
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
 }
 .variable{
     display: flex;
@@ -98,12 +137,10 @@
 .llave{
     height: 200px;
 }
-.definicion{
-    background-color: rgba(228, 113, 60, 0.87);
-}
 .preguntas{
     background-color: rgba(228, 245, 70, 0.87);
     width: 200px;
+    margin: 15px auto;
 }
 .btn{
     width: 50px;
@@ -129,7 +166,7 @@
 .figura{
     width: 80px;
 }
-.contenedorNumero{
+.contenedorNumero, .contenedorLetra{
     width: 100px;
     height: 100px;
     display: flex;
@@ -137,7 +174,7 @@
     text-align: center;
     padding: 15px;
 }
-.numero{
+.numero, .letra{
     font-size: 80px;
 }
 .nota2{
@@ -147,4 +184,26 @@
     text-align: justify;
     border-radius: 15px;
     margin: 15px auto;
+}
+.correcto{
+    background: rgb(9, 255, 0);
+}
+.incorrecto{
+    background: rgb(255, 51, 0);
+}
+.centrar{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.respuesta{
+    margin: 15px 0;
+}
+.btnTextoLargo{
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 3px;
+    width: 125px;
+    height: 25px;
+    font-size: 20px;
 }

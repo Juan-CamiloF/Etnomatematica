@@ -383,4 +383,40 @@ window.onload = function () {
       ctx.stroke();
     }
   }
+  const canva18 = document.getElementById("linea18");
+  if (canva18 && canva18.getContext) {
+    let ctx = canva18.getContext("2d");
+    if (ctx) {
+      ctx.lineWidth = 5;
+      ctx.strokeStyle = "rgba(70, 111, 245, 0.87)";
+      ctx.beginPath();
+      //Linea
+      ctx.moveTo(25, 0);
+      ctx.lineTo(25, 50);
+      //Flechas
+      ctx.moveTo(25, 50);
+      ctx.lineTo(15, 30);
+      ctx.moveTo(25, 50);
+      ctx.lineTo(35, 30);
+      ctx.stroke();
+    }
+  }
+  const canva19 = document.getElementById("linea19");
+  if (canva19 && canva19.getContext) {
+    let ctx = canva19.getContext("2d");
+    if (ctx) {
+      ctx.lineWidth = 5;
+      ctx.strokeStyle = "rgba(70, 111, 245, 0.87)";
+      ctx.beginPath();
+      //Linea
+      ctx.moveTo(25, 0);
+      ctx.lineTo(25, 50);
+      //Flechas
+      ctx.moveTo(25, 50);
+      ctx.lineTo(15, 30);
+      ctx.moveTo(25, 50);
+      ctx.lineTo(35, 30);
+      ctx.stroke();
+    }
+  }
 };

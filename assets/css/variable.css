@@ -4,7 +4,7 @@
     justify-content: center;
 }
 .img{
-    width: 250px;
+    width: 200px;
     margin: 15px;
     border-radius: 15px;
 }
@@ -30,28 +30,27 @@
 }
 .textos-ejemplos{
     background-color: rgba(228, 113, 60, 0.87);
-    width: 100px;   
+    width: 150px;   
 }
-.fila{
-    display: flex;
-    justify-content: space-between;
+table{
+    margin:25px 0;
+    border: 3px solid rgba(70, 111, 245, 0.87);
+    font-size: 25px;
     width: 50%;
-    margin: 5px auto;
-    align-items: center;
 }
-.resultado{
-    display:flex;
+tr,th,td{
+    padding: 15px 40px;
+    text-align: center;
+    border: 1px solid rgba(70, 111, 245, 0.87);
+}
+.tabla{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
     align-items: center;
 }
 .Signo{
     font-size: 100px;
-}
-.elevado{
-    display: flex;
-    justify-content: flex-start;   
-}
-.SignoElevado{
-    font-size: 45px;
 }
 .primerElemento{
     display: flex;
@@ -61,6 +60,9 @@
 }
 .textos-primerElemento{
     font-size: 18px;
+}
+.formula{
+    text-align: center;
 }
 .contenedor-primerElemento{
     font-size: 30px;
@@ -120,12 +122,14 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 15px 0;
 }
 .imgNumeros{
     margin: 0 25px;
 }
 .preguntas{
     background-color: rgba(228, 245, 70, 0.87);
+    margin: 15px auto;
 }
 .spanVar{
     background:  rgb(212, 39, 247);
@@ -169,38 +173,74 @@
     border: 2px solid rgba(70, 111, 245, 0.87);
     box-shadow: 3px 3px rgba(70, 111, 245, 0.87);
 }
-.varIndependiente > h2 ,.varDependiente > h2{
-    text-align: center;
-    margin: 10px 0;
+.opciones{
+    margin: 25px 0;
 }
-.varIndependienteImg, .varDependienteImg{
+.opcion{
     display: flex;
-    justify-content: center;
+    margin: 15px;
     align-items: center;
 }
-.precio{
-    padding: 7px;
-    border: 3px solid rgba(70, 111, 245, 0.87);
+.btnActividad{
+    width: 30px;
+    height: 30px;
     border-radius: 5px;
-}
-.bombillo{
-    color: rgb(255, 255, 64);
-    font-size: 30px !important;
+    border: 2px solid rgba(66, 228, 60, 0.87);
+    background: none;
+    box-shadow: 3px 3px rgba(66, 228, 60, 0.87);
     cursor: pointer;
-    margin: 5px;
+    outline:none;
+    margin-right: 15px;
 }
-.bombillo:hover{
-    color: rgba(70, 111, 245, 0.87);
+.btnActividad:hover{
+    background:rgba(70, 111, 245, 0.87) ;
+    border: 2px solid rgba(70, 111, 245, 0.87);
+    box-shadow: 3px 3px rgba(70, 111, 245, 0.87);
 }
-.varPreguntas{
-    width: 400px;
-    margin: 15px auto;
+.btnValidar{
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid rgba(66, 228, 60, 0.87);
+    background: none;
+    box-shadow: 3px 3px rgba(66, 228, 60, 0.87);
+    font-size: 18px;
+    cursor: pointer;
+    outline:none;
 }
-.varDependienteContenedor{
+.btnValidar:hover{
+    background:rgba(70, 111, 245, 0.87) ;
+    border: 2px solid rgba(70, 111, 245, 0.87);
+    box-shadow: 3px 3px rgba(70, 111, 245, 0.87);
+}
+.validar{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
-.varDependienteImg{
-    margin: 15px;
+.correcto{
+    background: rgb(9, 255, 0);
+}
+.incorrecto{
+    background: rgb(255, 51, 0);
+}
+.btnTexto{
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 3px;
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+}
+.rojo{
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+}
+.textosTabla{
+    width: 30%;
+    margin-left: 25px;
+}
+.centrar{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }

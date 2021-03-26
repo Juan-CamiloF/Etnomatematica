@@ -29,3 +29,8 @@ body{
 .volver:hover{
     color: rgb(108, 108, 255);
 }
+.video{
+    display:flex;
+    justify-content: center;
+    margin: 15px 0;
+}
